@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sw",
+				"swapDown"
+			],
+			[
+				"w",
+				"windows"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"con",
+				"cointainer"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"xhr",
+				"xhr"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"iframe",
+				"iframeHtml"
+			],
+			[
+				"wid",
+				"windowHeight"
+			],
+			[
+				"win",
+				"windowHeight"
+			],
+			[
+				"margin",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/monk/git/coinpr0n.com/index.html",
+		"/home/monk/.xmonad/xmonad.hs",
+		"/home/monk/.xmobarrc",
+		"/home/monk/git/coinpr0n.com/links.html",
+		"/home/monk/git/coinpr0n.com/banner.php",
+		"/home/monk/git/coinpr0n.com/about.html",
+		"/home/monk/git/coinpr0n.com/js/showmedia.js",
+		"/home/monk/git/coinpr0n.com/js/scripts.js",
+		"/home/monk/git/coinpr0n.com/music.html",
+		"/home/monk/git/coinpr0n.com/legal.html",
+		"/home/monk/Downloads/dillinger_2013_09_02T22_54_57_706Z.html",
+		"/home/monk/bin/Bridget/data/users/zakryze.json",
+		"/home/monk/git/kiwi/client/assets/src/index.html.tmpl",
+		"/home/monk/git/coinpr0n.com/about_gfx.html",
+		"/home/monk/git/coinpr0n.com/ajax.html",
+		"/home/monk/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/monk/git/kiwi/client/assets/css/style-custom.css",
+		"/home/monk/git/kiwi_live/client/assets/src/index.html.tmpl_LIVE",
+		"/home/monk/git/kiwi/client/assets/css/font-awesome.min.css",
+		"/home/monk/git/kiwi_live/client/assets/src/index.html.tmpl",
+		"/home/monk/git/kiwi/config.js",
+		"/home/monk/git/kiwi_live/client/assets/src/views/userbox.js",
+		"/home/monk/git/kiwi/client/assets/src/views/userbox.js",
+		"/home/monk/git/kiwi/client/assets/src/views/mediamessage.js",
+		"/home/monk/git/kiwi_live/client/assets/src/views/mediamessage.js",
+		"/home/monk/git/kiwi/index.html.tmpl",
+		"/home/monk/git/kiwi/mediamessage.js",
+		"/home/monk/git/coinpr0n.com/js/sse.js",
+		"/home/monk/git/kiwi_master/client/assets/src/views/mediamessage.js",
+		"/home/monk/git/kiwi_master/client/assets/src/views/userbox.js",
+		"/home/monk/git/kiwi_production/client/assets/src/views/userbox.js",
+		"/home/monk/git/kiwi/client/assets/css/style-stripped.css",
+		"/home/monk/git/kiwi/client/assets/src/app.js",
+		"/home/monk/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/monk/git/coinpr0n.com/js/ui.js",
+		"/home/monk/git/kiwi/client/assets/plugins/filepicker.html",
+		"/home/monk/git/kiwi/client/assets/css/style.css",
+		"/home/monk/git/kiwi/client/assets/kiwi.js",
+		"/home/monk/git/kiwi/client/assets/plugins/plugin_example.html",
+		"/home/monk/git/kiwi/server/plugininterface.js",
+		"/home/monk/git/kiwi/server/client.js",
+		"/home/monk/git/kiwi/client/assets/src/build.js",
+		"/home/monk/git/kiwi/client/assets/src/models/pluginmanager.js",
+		"/home/monk/public_html/index.html",
+		"/home/monk/tmp/deepspace.html",
+		"/home/monk/git/BridgetTheMidget/pom.xml",
+		"/home/monk/tmp/unrealircd.conf",
+		"/home/monk/tmp/coupons.txt",
+		"/home/monk/git/kiwi/client/assets/src/index.html.tmpl.bkp",
+		"/home/monk/git/kiwi/client/assets/src/translations/en.po",
+		"/home/monk/git/kiwi/client/assets/locales/pr0n.json",
+		"/home/monk/git/kiwi/client/assets/locales/pt-br.json",
+		"/home/monk/git/kiwi/client/assets/src/translations/template.po",
+		"/home/monk/git/kiwi/client/assets/src/translations/translations.json",
+		"/home/monk/git/kiwi/client/assets/src/translations/pr0n.po",
+		"/home/monk/git/kiwi/client/assets/locales/en-gb.json",
+		"/home/monk/dev/maven/BridgetTheMidget/pom.xml",
+		"/home/monk/dev/maven/BridgetTheMidget/src/main/java/Main.java",
+		"/home/monk/dev/maven/BridgetTheMidget/src/test/java/MainTest.java",
+		"/home/monk/dev/tmp/MavenExample/coinpr0n/pom.xml",
+		"/home/monk/dev/node/kiwi/README.md",
+		"/home/monk/dev/node/kiwi/client/assets/src/views/mediamessage.js",
+		"/home/monk/dev/java/coinpr0n/war/index.html",
+		"/home/monk/dev/java/coinpr0n/war/css/main.css",
+		"/home/monk/dev/node/kiwi/client/assets/css/style-beta.css",
+		"/home/monk/dev/java/coinpr0n/war/js/sse.js",
+		"/home/monk/Server/public_html/index.html",
+		"/home/monk/dev/node/kiwi/client/assets/src/index.html.tmpl",
+		"/home/monk/dev/node/kiwi/client/assets/js/sse.js",
+		"/home/monk/dev/node/kiwi/client/assets/css/font-awesome.css",
+		"/home/monk/dev/node/kiwi/client/assets/css/style.css",
+		"/home/monk/dev/node/kiwi/client/assets/src/build.js",
+		"/home/monk/dev/node/kiwi/client/assets/src/beta.html.tmpl",
+		"/home/monk/dev/node/kiwi/client/assets/kiwi.js",
+		"/home/monk/dev/node/kiwi/client/index.html",
+		"/home/monk/dev/node/kiwi/client/assets/src/views/userbox.js",
+		"/home/monk/dev/node/kiwi/server_modules/example.js",
+		"/home/monk/dev/node/kiwi/server/server.js",
+		"/home/monk/dev/node/kiwi/server/kiwi.js",
+		"/home/monk/dev/node/kiwi/kiwi",
+		"/home/monk/dev/node/kiwi/kiwi.log",
+		"/home/monk/dev/node/kiwi/kiwi.bat",
+		"/home/monk/dev/node/kiwi/.gitignore",
+		"/home/monk/dev/node/kiwi/config.js",
+		"/home/monk/dev/node/kiwi/package.json",
+		"/home/monk/dev/node/kiwi/kiwiirc.pid",
+		"/home/monk/dev/node/kiwi/TEMP/mediamessage.js",
+		"/home/monk/dev/node/kiwi/client/assets/locales/en-gb.json",
+		"/home/monk/dev/node/kiwi/client/assets/src/translations/en-gb.po",
+		"/home/monk/dev/node/TEMP/userbox.js",
+		"/home/monk/dev/node/TEMP/index.html.tmpl",
+		"/home/monk/dev/node/KiwiIRC/client/assets/src/index.html.tmpl",
+		"/home/monk/dev/node/KiwiIRC/client/assets/src/translations/translations.json",
+		"/home/monk/dev/node/KiwiIRC/client/assets/src/translations/template.po",
+		"/home/monk/public_html/coinwidget.html",
+		"/home/monk/public_html/js/sse.js",
+		"/home/monk/public_html/css/main.css",
+		"/media/dump/home/monk/.weechat/irc.conf",
+		"/home/monk/tmp/bitcoin.html",
+		"/home/monk/tmp/WTF.md",
+		"/home/monk/VPS/coinpr0n/index.html",
+		"/home/monk/VPS/coinpr0n/css/main.css",
+		"/home/monk/Bridget/data/users/dafr0g.json",
+		"/home/monk/Bridget/data/users/django.json",
+		"/home/monk/Bridget/data/users/gamermetal.json",
+		"/home/monk/.vimrc",
+		"/home/monk/Bridget/data/users/cracknice.json",
+		"/home/monk/Bridget/data/users/craseytrain.json",
+		"/home/monk/Bridget/data/users/csc.json",
+		"/home/monk/Bridget/data/users/ajenjo.json",
+		"/home/monk/Bridget/data/users/bridgetthemidget.json",
+		"/home/monk/Bridget/data/users/coinpr0n.json",
+		"/home/monk/Bridget/data/users/twitter.json",
+		"/home/monk/Bridget/data/users/pussyfreak.json",
+		"/home/monk/Bridget/data/users/kujo.json",
+		"/home/monk/Bridget/data/users/minetester.json",
+		"/home/monk/tmp/peerbet.java",
+		"/home/monk/tmp/banner.html",
+		"/home/monk/Bridget/data/users/weirdthall.json",
+		"/home/monk/Bridget/data/users/mehshuggah.json",
+		"/home/monk/Bridget/data/users/meowy.json",
+		"/home/monk/Bridget/data/users/phoeynix.json",
+		"/home/monk/Bridget/data/users/piratekitteh.json",
+		"/home/monk/Bridget/data/users/yna.json",
+		"/home/monk/Bridget/data/users/wildchild.json",
+		"/home/monk/Bridget/data/users/lennonism.json",
+		"/home/monk/Bridget/data/users/kinga.json",
+		"/home/monk/Bridget/data/users/kookies.json"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"outline-color",
+			"229",
+			"outline",
+			"highlight",
+			"relaxed",
+			"main",
+			"Height",
+			"height",
+			"Height",
+			"height",
+			"header",
+			"plugin",
+			"plugins",
+			"_plugins",
+			"kiwi_plugins",
+			"plugins",
+			"cgiirc",
+			"webirc",
+			"start",
+			"Start",
+			"Start...",
+			"Message",
+			"enc",
+			"OPENSHIFT_INTERNAL_IP",
+			"8081",
+			"gsx"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 202.0,
+	"status_bar_visible": true
+}

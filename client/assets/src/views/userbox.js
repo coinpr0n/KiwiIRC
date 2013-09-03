@@ -9,6 +9,14 @@ _kiwi.view.UserBox = Backbone.View.extend({
         'click .devoice': 'devoiceClick',
         'click .kick': 'kickClick',
         'click .ban': 'banClick'
+
+        , 'click .tip': 'tipClick'
+        , 'click .balance': 'balanceClick'
+        , 'click .setbitcoin': 'setbitcoinClick'
+        , 'click .withdraw': 'withdrawClick'
+        , 'click .ticker': 'tickerClick'
+        , 'click .pollones': 'pollonesClick'
+
     },
 
     initialize: function () {
@@ -22,6 +30,13 @@ _kiwi.view.UserBox = Backbone.View.extend({
             message: _kiwi.global.i18n.translate('client_views_userbox_query').fetch(),
             info: _kiwi.global.i18n.translate('client_views_userbox_whois').fetch(),
             slap: _kiwi.global.i18n.translate('client_views_userbox_slap').fetch()
+
+            , tip: "Send Tip"
+            , balance: "Balance"
+            , setbitcoin: "Set Bitcoin"
+            , withdraw: "Withdraw"
+            , ticker: "Ticker (BTC-USD)"
+
         };
         this.$el = $(_.template($('#tmpl_userbox').html().trim(), text));
     },
@@ -65,4 +80,28 @@ _kiwi.view.UserBox = Backbone.View.extend({
         // TODO: Set ban on host, not just on nick
         _kiwi.app.controlbox.processInput('/mode ' + this.channel.get('name') + ' +b ' + this.member.get('nick') + '!*');
     }
+
+//
+//<!-- coinpr0n -->
+    , tipClick: function (event) {
+        _kiwi.app.controlbox.processInput('/msg BridgetTheMidget tip ' + this.member.get('nick') + ' ' + document.getElementById('tiptext').value);
+    }
+    , balanceClick: function (event) {
+        _kiwi.app.controlbox.processInput('/msg BridgetTheMidget balance ' );
+    }
+    , setbitcoinClick: function (event) {
+        _kiwi.app.controlbox.processInput('/msg BridgetTheMidget setbitcoin ');
+    }
+    , withdrawClick: function (event) {
+        _kiwi.app.controlbox.processInput('/msg BridgetTheMidget withdraw ');
+    }
+    , tickerClick: function (event) {
+        _kiwi.app.controlbox.processInput('/msg BridgetTheMidget ticker ');
+    }
+    , pollonesClick: function (event) {
+        _kiwi.app.controlbox.processInput('/me *fap!* *fap!* *fap!* ');
+    }
+//<!-- coinpr0n -->
+//
+
 });

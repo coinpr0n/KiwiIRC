@@ -121,6 +121,38 @@ _kiwi.view.MediaMessage = Backbone.View.extend({
             return $('');
         },
 
+//
+// <!-- coinpr0n -->
+        xhamster: function() {
+            var ytid = this.$el.data('ytid');
+            var that = this;
+            var yt_html = '<iframe width="510" height="400" src="http://xhamster.com/xembed.php?video='+ytid+'" frameborder="0" scrolling="no"></iframe>';
+            that.$content.find('.content').html(yt_html);
+            return $('');
+        },
+        xnxx: function () {
+            var ytid = this.$el.data('ytid');
+            var that = this;
+            var yt_html = '<iframe src="http://flashservice.xvideos.com/embedframe/'+ytid+'" frameborder=0 width=510 height=400 scrolling=no></iframe>';
+            that.$content.find('.content').html(yt_html);
+            return $('');
+        },
+        xvideos: function () {
+            var ytid = this.$el.data('ytid');
+            var that = this;
+            var yt_html = '<iframe src="http://flashservice.xvideos.com/embedframe/'+ytid+'" frameborder=0 width=510 height=400 scrolling=no></iframe>';
+            that.$content.find('.content').html(yt_html);
+            return $('');
+        },
+        youporn: function () {
+            var ytid = this.$el.data('ytid');
+            var that = this;
+            var yt_html = '<div  style="width:510px;max-width:510px;"><iframe src="http://www.youporn.com/embed/'+ytid+'" frameborder=0 width="100%" height="400" scrolling=no name="yp_embed_video"></iframe></div>';
+            that.$content.find('.content').html(yt_html);
+            return $('');
+        },
+// <!-- coinpr0n -->
+//
 
         gist: function () {
             var that = this,
@@ -168,6 +200,39 @@ _kiwi.view.MediaMessage = Backbone.View.extend({
         if (matches) {
             html += '<span class="media youtube" data-type="youtube" data-url="' + url + '" data-ytid="' + matches[1] + '" title="YouTube Video"><a class="open"><i class="icon-chevron-right"></i></a></span>';
         }
+
+//
+//coinpr0n
+        // Is xhamster?
+        matches=url.indexOf("http://xhamster.com/movies");
+        if (matches!=-1) {
+            matches=url.substr(27,6);
+            //alert(matches);
+            html += '<span class="media youtube" data-type="xhamster" data-url="' + url + '" data-ytid="' + matches + '" title="XHamster Video"><a class="open"><i class="icon-chevron-right"></i></a> <em>NSFW!</em></span>';
+        }
+        // Is xnxx?
+        matches=url.indexOf("http://video.xnxx.com/video");
+        if (matches!=-1) {
+            matches=url.substr(27,7);
+            //alert(matches);
+            html += '<span class="media youtube" data-type="xnxx" data-url="' + url + '" data-ytid="' + matches + '" title="Xnxx Video"><a class="open"><i class="icon-chevron-right"></i></a> <em>NSFW!</em></span>';
+        }
+        // Is xvideos?
+        matches=url.indexOf("http://www.xvideos.com/video");
+        if (matches!=-1) {
+            matches=url.substr(28,7);
+            //alert(matches);
+            html += '<span class="media youtube" data-type="xvideos" data-url="' + url + '" data-ytid="' + matches + '" title="Xnxx Video"><a class="open"><i class="icon-chevron-right"></i></a> <em>NSFW!</em></span>';
+        }
+        // Is youporn?
+        matches=url.indexOf("http://www.youporn.com/watch/");
+        if (matches!=-1) {
+            matches=url.substr(29);
+            //alert(matches);
+            html += '<span class="media youtube" data-type="youporn" data-url="' + url + '" data-ytid="' + matches + '" title="YouPorn Video"><a class="open"><i class="icon-chevron-right"></i></a> <em>NSFW!</em></span>';
+        }
+//coinpr0n
+//
 
         // Is a github gist?
         matches = (/https?:\/\/gist\.github\.com\/(?:[a-z0-9-]*\/)?([a-z0-9]+)(\#(.+))?$/i).exec(url);

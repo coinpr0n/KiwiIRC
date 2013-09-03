@@ -9,19 +9,46 @@
 
 <link rel="shortcut icon" href="<%base_path%>/assets/img/favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="<%base_path%>/assets/css/style.css" />
+<!-- <link rel="stylesheet" type="text/css" href="<%base_path%>/assets/css/style.css" /> -->
+<link rel="stylesheet" type="text/css" href="<%base_path%>/assets/css/style-custom.css" />
 <link rel="stylesheet" type="text/css" href="<%base_path%>/assets/css/font-awesome.min.css" />
 <!--[if IE 7]>
 <link rel="stylesheet" type="text/css" href="/kiwi/assets/css/font-awesome-ie7.css" />
 <![endif]-->
 </head>
 <body>
-    <div id="kiwi" class="theme_relaxed">
+    <div id="kiwi" class="theme_cli">
         <div class="toolbar">
             <div class="app_tools">
                 <ul class="main">
-                    <li class="settings"><i class="icon-cogs" title="Settings"></i></li>
-                    <li><a href="https://kiwiirc.com/" target="_blank"><img src="<%base_path%>/assets/img/ico.png" alt="KiwiIRC" title="KiwiIRC" /></a></li>
+                    <!-- <li class="settings"><i class="icon-cogs" title="Settings"></i></li> 
+                    <li><a href="https://kiwiirc.com/" target="_blank"><img src="<%base_path%>/assets/img/ico.png" alt="KiwiIRC" title="KiwiIRC" /></a></li> -->
+                    <style> 
+                    #nav{list-style:none;font-weight:bold;margin:10px;float:left;z-index:9999;} 
+                    #nav div{display:none;background:#333;list-style:none;position:absolute;z-index:9999;} 
+                    #nav li{padding:0;margin:0;} 
+                    #nav li:hover div{display:block;opacity:0.8;} 
+                    #dropblk {font-weight:normal;font-size:14px;height:350px;width:200px;border-radius:20px;padding:4px;z-index:999999;} 
+                    </style> 
+                    <ul id="nav"> 
+                        <li>Main Menu
+                        <div id="dropblk">
+                            <br/>
+                            <ul style="text-align:right;margin-right:20px;">
+                                <li class="channels"><i class="icon-comment" title="Channels"></i> Channels</li>
+                                <br><br>
+                                <a onclick="_kiwi.view.UserBox._kiwi.app.controlbox.processInput('/join #coinpr0n');" style="font-weight:bold;color:#eee;">#coinpr0n</a> - Main Channel
+                                <br/>
+                                <a onclick="_kiwi.view.UserBox._kiwi.app.controlbox.processInput('/join #coinpr0n-es');" style="font-weight:bold;color:#eee;">#coinpr0n-es</a> - Español
+                                <br/>
+                                <a onclick="_kiwi.view.UserBox._kiwi.app.controlbox.processInput('/join #CVChat');" style="font-weight:bold;color:#eee;">#CVChat</a> - Fun &amp; Games
+                                <br>
+                                <li class="moreinfo"><i title="More Info"></i>&nbsp;</li> 
+                                <br>
+                                <li class="settings"><i class="icon-cogs" title="Settings"></i> UI Settings</li> 
+                            </ul>
+                        </div> 
+                        </li>
                 </ul>
             </div>
 
@@ -58,16 +85,24 @@
 
     <script type="text/html" id="tmpl_userbox">
         <div class="userbox">
+            <a class="query"><i class="icon-comment"></i><%= message %></a>
+            <input id="tiptext" type="text" size="10" style="border:1px solid #555;border-radius:8px;margin:5px;" placeholder="..tip satoshis.."/>
+            <a class="tip"><i class="icon-user-md"></i><%= tip %></a>
             <a class="if_op op"><i class="icon-star"></i><%= op %></a>
             <a class="if_op deop"><i class="icon-star-empty"></i><%= de_op %></a>
             <a class="if_op voice"><i class="icon-volume-up"></i><%= voice %></a>
             <a class="if_op devoice"><i class="icon-volume-off"></i><%= de_voice %></a>
             <a class="if_op kick"><i class="icon-remove"></i><%= kick %></a>
             <a class="if_op ban"><i class="icon-ban-circle"></i><%= ban %></a>
-
-            <a class="query"><i class="icon-comment"></i><%= message %></a>
-            <a class="info"><i class="icon-info-sign"></i><%= info %></a>
             <a class="slap"><i class="icon-user-md"></i><%= slap %></a>
+            <a class="info"><i class="icon-info-sign"></i><%= info %></a>
+            Mah Bitch<br/><hr/>
+            <a class="balance"><i class="icon-user-md"></i><%= balance %></a>
+            <a class="setbitcoin"><i class="icon-user-md"></i><%= setbitcoin %></a>
+            <a class="withdraw"><i class="icon-user-md"></i><%= withdraw %></a>
+            coinpr0n<br/><hr/>
+            <a class="ticker"><i class="icon-user-md"></i><%= ticker %></a>
+            <a class="pollones"><i class="icon-user-md"></i>5 vs 1</a>
         </div>
     </script>
 
@@ -78,12 +113,8 @@
     </script>
 
     <script type="text/html" id="tmpl_new_connection_info">
-        <div style="margin:1em 20px;">
-            <img src="https://kiwiirc.com/img/ico.png" alt="KiwiIRC Logo" title="Kiwi IRC" style="display:block; margin:0 auto;"/> <br />
-            <p style="font-style:italic;">A <strong>hand-crafted IRC client</strong> that you can enjoy. Designed to be used <strong>easily</strong> and <strong>freely</strong>.</p>
-
-            <p style="font-size:0.9em;margin-top:2em;">Peek at the <a href="https://www.kiwiirc.com/">Kiwi IRC homepage</a> for more information or to find out how to embed it on your own website. Looking for source code? Try the <a href="http://github.com/prawnsalad/KiwiIRC/">GitHub</a> page. This network of people may not be associated with Kiwi IRC itself.</p>
-        </div>
+        <div style="">&nbsp;</div>
+        <img width="500" style="opacity:0.8;margin:-20px 0 0 20px;" src="<%base_path%>/assets/img/logo.png">
     </script>
 
     <script type="text/html" id="tmpl_server_select">
@@ -95,14 +126,14 @@
             </div>
 
             <div class="server_details" style="position:relative;width:320px;">
-                <div class="status"><%= think_nick %></div>
+                <div class="status" style="padding-top:30px;">&nbsp;</div>
 
                 <form>
                     <div class="basic">
                         <table>
                             <tr class="nick">
                                 <td><label for="server_select_nick"><%= nickname %></label></td>
-                                <td><input type="text" class="nick" id="server_select_nick"></td>
+                                <td><input type="text" class="nick" id="server_select_nick" style="outline:none;"></td>
                             </tr>
 
                             <tr class="have_pass">
@@ -113,10 +144,10 @@
 
                             <tr class="pass">
                                 <td><label for="server_select_password"><%= password %></label></td>
-                                <td><input type="password" class="password" id="server_select_password"></td>
+                                <td><input type="password" class="password" id="server_select_password" style="outline:none;"></td>
                             </tr>
 
-                            <tr class="channel">
+                            <tr class="channel" style="display:none;">
                                 <td><label for="server_select_channel"><%= channel %></label></td>
                                 <td>
                                     <div style="position:relative;">
@@ -166,9 +197,12 @@
                     </div>
                 </form>
 
-                <a class="kiwi_logo" href="https://kiwiirc.com/" target="_blank">
-                    <h1><span><%= powered_by %></span> <img src="<%base_path%>/assets/img/ico.png" alt="KiwiIRC Logo" title="Kiwi IRC" /></h1>
-                </a>
+    <div style="font-family:monospace;font-size:7px;opacity:0.5;text-align:right;padding:10px 20px 0 0;">
+        <a href="https://kiwiirc.com/" target="_blank" style="color:rgba(50,100,50,1);text-decoration:none;">
+            <h1><span>Powered by KiwiIRC</span> <img src="<%base_path%>/assets/img/ico.png" alt="KiwiIRC Logo" title="Kiwi IRC" width="16" /></h1>
+        </a>
+    </div>
+
             </div>
         </div>
     </script>
